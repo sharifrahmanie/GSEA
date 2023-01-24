@@ -27,8 +27,6 @@ GSEA <- function(diftable,
                           stats = FC.vec,
                           scoreType = "std",
                           nperm=1000)
-    
-    my_pal <- c("#1B9E77","#7570B3", "#E7298A", "#66A61E", "#E6AB02", "#A6761D", "#666666", "#9A7D0A")
     gsea.H$pathway <- gsub("HALLMARK_","", gsea.H$pathway)
     gsea.H$pathway <- gsub("_"," ", gsea.H$pathway)
     gsea.H <- gsea.H %>%
