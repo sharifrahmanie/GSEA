@@ -58,6 +58,11 @@ GSEA <- function(diftable,
       labs(subtitle = paste0("GSEA"))
     return(p)
 }
+options(warn = -1)
 diftale <- read_csv("DEGs_up.csv")
-GSEA(diftable = diftale, padj = 0.05, uplfc = 1, downlfc = -1, ntop = 10)
+GSEA(diftable = diftale, 
+     padj = 0.05, 
+     uplfc = 1, 
+     downlfc = -1,
+     ntop = 10)
 
